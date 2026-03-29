@@ -15,6 +15,22 @@
 * H2 Database
 * Lombok
 
+## 🚀 실행 방법
+
+1. 프로젝트 클론
+2. 아래 명령어 실행
+
+./gradlew bootRun
+3. 브라우저에서 Swagger 접속
+4. HomeController의 리다이텍트로 아래로접속
+```
+http://localhost:8080/swagger-ui/index.html
+```
+- 기본 포트: 8080
+- H2 콘솔: http://localhost:8080/h2-console
+- Swagger: http://localhost:8080/swagger-ui/index.html
+---
+
 ## 🗂️ DB 설계
 
 ### 📌 contents
@@ -138,8 +154,9 @@
 ---
 ## 🔐 인증 및 권한 처리
 
-* Spring Security 기반 인증 구현
-* 로그인 방식: Session 방식
+* HttpSession 기반 인증 방식을 사용합니다.
+* 로그인 시 인증 정보를 세션에 저장하여 사용자 상태를 유지합니다.
+* Swagger 테스트 편의를 위해 CSRF는 비활성화했습니다.
 
 ### ✔ 권한 정책
 
@@ -166,17 +183,6 @@
 
 ---
 
-## 🚀 실행 방법
-
-1. 프로젝트 클론
-2. 애플리케이션 실행
-3. 브라우저에서 Swagger 접속
-
-```
-http://localhost:8080/swagger-ui.html
-```
-
----
 
 ## 📄 API 문서
 
