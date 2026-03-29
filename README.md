@@ -19,10 +19,10 @@
 
 1. 프로젝트 클론
 2. 아래 명령어 실행
-
 ./gradlew bootRun
 3. 브라우저에서 Swagger 접속
 4. HomeController의 리다이텍트로 아래로접속
+
 ```
 http://localhost:8080/swagger-ui/index.html
 ```
