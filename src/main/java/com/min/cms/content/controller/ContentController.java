@@ -3,6 +3,7 @@ package com.min.cms.content.controller;
 import com.min.cms.content.dto.ContentRequestDto;
 import com.min.cms.content.dto.ContentResponseDto;
 import com.min.cms.content.service.ContentService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.*;
 import org.springframework.data.web.PageableDefault;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/contents")
+@Tag(name = "2. Content API")
 public class ContentController {
 
     private final ContentService contentService;

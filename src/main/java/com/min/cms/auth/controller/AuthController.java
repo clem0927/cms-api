@@ -2,6 +2,7 @@ package com.min.cms.auth.controller;
 
 import com.min.cms.account.dto.AccountDto;
 import com.min.cms.account.service.AccountService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
@@ -17,6 +18,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/auth")
+@Tag(name = "1. Auth API")
 @RequiredArgsConstructor
 public class AuthController {
 
