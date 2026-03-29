@@ -28,6 +28,7 @@ http://localhost:8080/swagger-ui/index.html
 ```
 - 기본 포트: 8080
 - H2 콘솔: http://localhost:8080/h2-console
+- JDBC URL:jdbc:h2:mem:testdb
 - Swagger: http://localhost:8080/swagger-ui/index.html
 ---
 
